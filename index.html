@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>自由星球</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
@@ -21,19 +22,19 @@
     <link rel="icon" href="/favicon.ico">
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
-
-  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 </head>
+
 <body>
   <div id="container">
     <div class="left-col">
     <div class="overlay"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<div class="profilepic">
-			<img src="https://avatars0.githubusercontent.com/u/10783836?v=3&amp;u=5e52d10d4f377f9a905a743e4cf43e4b747f8aae&amp;s=140">
-		</div>
+		<a href="/" class="profilepic">
+			
+			<img src="https://avatars0.githubusercontent.com/u/10783836?v=3&amp;u=5e52d10d4f377f9a905a743e4cf43e4b747f8aae&amp;s=140" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
 
 		<hgroup>
 		  <h1 class="header-author"><a href="/">kingwoshi</a></h1>
@@ -71,12 +72,12 @@
 					<div class="tips-arrow"></div>
 					<ul class="tips-inner">
 						<li>菜单</li>
-						<li>标签</li>
+						<li>標籤</li>
 						
 						<li>友情链接</li>
 						
 						
-						<li>关于我</li>
+						<li>關於</li>
 						
 					</ul>
 				</div>
@@ -95,8 +96,6 @@
 				        
 							<li><a href="/tags/随笔">随笔</a></li>
 				        
-							<li><a href="/photos">相册</a></li>
-				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -114,7 +113,7 @@
 				
 				
 				<section class="switch-part switch-part2">
-					<div class="widget tagcloud">
+					<div class="widget tagcloud" id="js-tagcloud">
 						<a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
@@ -122,9 +121,11 @@
 				
 				
 				<section class="switch-part switch-part3">
+					<div id="js-friends">
 					
 			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.lolofinil.com/">金色洛菲尔</a>
 			        
+			        </div>
 				</section>
 				
 
@@ -132,25 +133,30 @@
 				
 				<section class="switch-part switch-part4">
 				
-					keep fit keep code.
+					<div id="js-aboutme">keep fit keep code.</div>
 				</section>
 				
 			</div>
 		</div>
 	</header>				
 </div>
+
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
-  	<div class="overlay"></div>
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">kingwoshi</h1>
+  	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://avatars0.githubusercontent.com/u/10783836?v=3&amp;u=5e52d10d4f377f9a905a743e4cf43e4b747f8aae&amp;s=140">
+			
+				<img src="https://avatars0.githubusercontent.com/u/10783836?v=3&amp;u=5e52d10d4f377f9a905a743e4cf43e4b747f8aae&amp;s=140" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
 			</div>
-
 			<hgroup>
-			  <h1 class="header-author"><a href="/">kingwoshi</a></h1>
+			  <h1 class="header-author">kingwoshi</h1>
 			</hgroup>
 			
 			<nav class="header-menu">
@@ -161,8 +167,6 @@
 					<li><a href="/archives">所有文章</a></li>
 		        
 					<li><a href="/tags/随笔">随笔</a></li>
-		        
-					<li><a href="/photos">相册</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -181,7 +185,8 @@
 		</header>				
 	</div>
 </nav>
-      
+
+      <div class="body-wrap">
   
     <article id="post-about-dream" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -189,10 +194,6 @@
       <a href="/2015/05/01/about-dream/" class="article-date">
   	<time datetime="2015-05-01T15:16:09.000Z" itemprop="datePublished">2015-05-01</time>
 </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-
     </div>
   
   <div class="article-inner">
@@ -209,25 +210,39 @@
   
 
       </header>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近加班，每天都在马不停蹄地敲代码中度过。</p>
 <p>但是我们为了什么而敲代码，大多数情况是为了赚钱生活吧，有钱了什么都好干，什么都能买，但唯独买不了健康的身体。难怪很多人说程序员是钱多命短的动物，嫁人就嫁程序员，没错的！</p>
 <p>身体感觉有点糟糕，所以每天开始晨跑顺带遛狗，早半个小时起床，你会看到早半个小时的风景。其实很多人早早的出门去上班了，我想这点我可能是幸运的，充足的睡眠对我来说很重要，否则会困乏一整天。跑步毕竟有点单调，我也试着做仰卧起坐，俯卧起撑，举哑铃，跳绳，轮滑。</p>
-<p>前几天遛狗在小区遇到一老头，也是条黑色贵宾犬，看我在跑步，开始感慨，年轻人啊是应该多锻炼，像我们老了，一身毛病，有钱了有屁用，身体才是真正属于自己的。碰巧看到过一篇文章，关于国内与国外女性的区别。一个美国男人娶了一个中国女人，结婚后男的觉得工作压力太大，退而求其次，换了一份轻松点，代价就是薪酬少了。女的就很不满意了，觉得男的没有上进心，后来甚至闹着要离婚。</p>
-<p>国外的女性大多数都很独立，如果她的老公或者男朋友换了压力更小，薪酬更低的工作，她们都不会有什么争吵，可能就调侃下，亲爱的，又换工作了~所以从第三者的角度来说，男女需要平等，至少不是谁应该这么做，谁不应该这么做，应该做的只是对于未来有更好的期待而觉得应该付出的努力。</p>
-<p>我们都会有梦想吧，从小到大，逐渐成长的过程中，总会有几个让你觉得印象深刻，魂牵梦绕的吧。看多了网上艰苦的创业，每天凌晨起，深夜睡，他们是值得佩服的，不论成功与否，至少他们一直都追求着自己的梦想，梦想越大，付出的努力也就越多。</p>
-<p>有时也会很憧憬自己所想的能够实现，但这并不是一蹴而就的，需要充分地准备，技术的积累，以及机会的到来。每当有了一些想法，我都会记录下来，虽然并不是很成熟，但随着时间的积累，未来的我肯定会完善以前的我的思想，这就是进步，无论是肯定还是否定。</p>
-<p>最近买了块手绘板，但很少有时间自己动手练习。因为下班回家差不多九点四十，加上半个小时跑步及遛狗，留给自己独立的时间真的很少，我需要保证充足的睡眠。很多时候，，我们听到看到想到，都可能会变成我们想要去实现的，这都是好的，只要你，总有那么一天，能够持之以恒。</p>
-<p>写给未来的自己，那些你以为的你想去做到的事情，有几件真正地做到了。</p>
-<p>The End<br>2015.05.01</p>
-
       
     </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/05/01/about-dream/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
+
+
+
 
 
 
@@ -241,10 +256,6 @@
       <a href="/2015/02/17/donot-ask-somthing/" class="article-date">
   	<time datetime="2015-02-17T15:16:09.000Z" itemprop="datePublished">2015-02-17</time>
 </a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
-
     </div>
   
   <div class="article-inner">
@@ -261,21 +272,33 @@
   
 
       </header>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
         <p>这句话最开始是在阅读《MacTalk：人生元编程》的时候看到的，同为coder的作者以极其幽默调侃的话语分析、解释与Mac相关的技术。这本书卖2块9毛9，平均算下，每篇文章卖5分多钱，卖得还真够贱的，作者也在序言调侃道：但行好事，莫问前程。</p>
 <p>前不久去邮局取快件，路程有点远，双休日，就出去骑骑车吧。是啊，连凯琳(贵宾犬)都觉得主人太宅了，到处拿玩具陪我玩，真是懂事的小家伙。距离邮局大概5-6公里，也就20分钟左右，休闲骑行。</p>
 <p>出门前看了下手机，雾霾指数：中等污染。空气质量不错，只要不是重度到能见度过低看不清道路由于骑行过快反应时间不够而撞车，啥都好说。在杭州，也就这样了，一个地方呆久了，总会习惯的，习惯到死不了就还好。</p>
-<p>取件过程有点曲折，宅久了果然容易老年痴呆，丧失自理能力。好不容易找到地址上写的邮局二楼，其实是在邮局背后的小巷里，第一个门，二楼，左拐，第一个门。不知道这送快递小哥怎么办事的，地址都不写清楚，像我这描述多么精简易懂，不当送快递的还真是可惜了。上二楼，左拐第一个门，敲了下门，一个胖胖的大哥映入眼帘，你是来取件的吧？哇靠，吃的肉比见的人还多！一见面就知道是个取快件的。真尼玛服了，不枉此行，至少涨姿势了。XXX的快件，就是昨天上午送，但是我不在家。哦，就是你啊，我敲门没人应，但是有条狗应了。艹(心想)，家里确实有条狗。是贵宾或者泰迪吧。靠，听到的狗叫比看到的人还多？好吧，我说是的，您真厉害。然后走了取件流程，交流过程还算流畅，至少没有听不懂。</p>
-<p>开车(自行车)，回家(狗窝)。凯琳，这么久不见会想我吧，还是回家吧，今天不宅。欢乐地骑着车，偶尔超过几个骑着电驴，玩着手机的sb，看见不爽超哪个，这不开车的江湖规矩嘛？突然，可能由于雾霾淡去，看见一条狗幻想着想要冲过马路，刚还想到取件狗的那一戳来着，在做梦吗？一想骑车怎么会做梦，不，开车。眼看这小狗快到车行道了，那生涩的眼神我立马就知道没啥过马路经验的，算了，既然都是开车出来的，总要做点好事吧。一个个sb从我身边超过，我掏出手机看了看。停下车，用动了下食指，吹了个口哨，想要勾引小狗过来，还挺机灵的嘛，这么经得起勾。来吧来吧，年纪轻轻的，死了多可惜，让我看看是公的母的，看看跟凯琳配不？咳咳，养宠物的都这德行。过来，小狗儿，果然屁颠屁颠的滚过来了，我一把抱住。走吧，带你去安全的地方。把你放到人行道里边吧，虽然不知道你将来的路要怎么走，我只能帮你到这了，再见。雷锋都是这样的吧，做好事不留名。</p>
-<p>加速，把刚才的几个sb一口气超越，这口气还真他妈的长。算了，我要拐弯了，剩下半口气下次出吧，或者不出了，做好事心情总是愉悦的，世界好像也大了很多，能多容下几个sb了。</p>
-<p>不对啊，好像写出来跟我想的不太一样啊。</p>
-<p>好吧，我承认题目与内容无关。但行好事，莫问前程。</p>
-<p>The End<br>2015.02.17</p>
-
       
     </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/02/17/donot-ask-somthing/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
 </article>
@@ -285,9 +308,12 @@
 
 
 
-  
-  
 
+
+
+  
+  
+</div>
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
@@ -303,8 +329,28 @@
     </div>
     
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script src="/js/main.js" type="text/javascript"></script>
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: undefined,
+		animate: undefined,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: undefined
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
 
   </div>
 </body>
